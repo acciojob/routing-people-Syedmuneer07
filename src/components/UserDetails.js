@@ -6,7 +6,7 @@ const UserDetails = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    setUser(null); // triggers Loading...
+    setUser(null);
 
     fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
       .then((res) => res.json())
