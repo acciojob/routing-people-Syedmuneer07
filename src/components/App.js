@@ -5,12 +5,12 @@ import UserDetails from "./UserDetails";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<UserList />} />
         <Route path="/users/:id" element={<UserDetails />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
